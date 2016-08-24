@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>three.js css3d - periodic table</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		
+	</head>
+	<body>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/three.js"></script>
+		<script src="libs/CSS3DRenderer.js"></script>
+		<script src="libs/TrackballControls.js"></script>
+		<script src="libs/tween.js"></script>
+        <script src="libs/raphael-min.js"></script>
+		<script src="libs/dracula_graph.js"></script>
+		<script src="Graph.js"></script>
+		<script src="eventing.js"></script>
+        <span id="ruler"></span> 
+		<div id="container"></div>
+		<div id="info">INFO DIV</div>
+		<div id="menu">
+			<button id="table">TEST ORGANIZE</button>
+			<button id="sphere">Button 2</button>
+			<button id="helix">Button 3</button>
+			<button id="grid">Button 4</button>
+		</div>
+
+		<script>
+            var graph = new Process_Graph();
+            
+            
+            document.getElementById('table').onmouseup = function(){
+                graph.Organize_Graph();
+            }
+		</script>
+	</body>
+</html>
